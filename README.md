@@ -16,24 +16,20 @@ TOTP
 -q                   Show info stored in database\
 -a algorithm         Support values are sha1, sha256, sha512 (default sha1)\
 -S service           Name of the service where otp will be used, default totp\
--h                   Show help\
+-h                   Show help
 
 * Configuration file: ./totp.cfg, /etc/totp/totp.cfg
 
 * Usage:
 
-*   Generate OTP using filename.key
+*   Generate OTP using filename.key\
+./{0} -gk filename.key [-t <base32|hex>] [-a <sha1|sha256|sha512>]
 
-** ./{0} -gk filename.key [-t <base32|hex>] [-a <sha1|sha256|sha512>]
+*   Save key into database\
+./{0} -g filename.key -S service [-P] [-t <base32|hex>]
 
-*   Save key into database
+*   Generate OTP using database\
+./{0} -k -S service [-P] [-s <seconds>] [-d <digits>] [-a <sha1|sha256|sha512>]
 
-** ./{0} -g filename.key -S service [-P] [-t <base32|hex>]
-
-*   Generate OTP using database
-
-** ./{0} -k -S service [-P] [-s <seconds>] [-d <digits>] [-a <sha1|sha256|sha512>]
-
-*   Consult the information stored in the database
-
-** ./{0} -q [-S service]
+*   Consult the information stored in the database\
+./{0} -q [-S service]
