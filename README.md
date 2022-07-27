@@ -20,7 +20,7 @@ TOTP
 
 * Configuration file: ./totp.cfg, /etc/totp/totp.cfg
 
-* Usage:
+* Usage:\
 --   Generate OTP using filename.key\
 ./{0} -gk filename.key [-t <base32|hex>] [-a <sha1|sha256|sha512>]\
 --   Save key into database\
