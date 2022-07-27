@@ -1,22 +1,22 @@
 # totp
 TOTP
 
--g filename.key      File with the string to use. Content can be in hex or base32
--t <type>            Select the type of string contained in the file <filename.key>
-                       type    => base32|hex
-                       default => base32
--g filename.key -P   It requests a password to encrypt the content of the filename.key
--gk filename.key     Generate OTP, this mode don´t store any information
--gkf filename.key    Generate random passphrase in base32
--gkP                 Generate random password for encryption data
--k                   Generate OTP
--k -P                Request password for decryption
--s seconds           TOTP time-step duration (default=`30`)
--d digits            Number of digits in one-time-password
--q                   Show info stored in database
--a algorithm         Support values are sha1, sha256, sha512 (default sha1)
--S service           Name of the service where otp will be used, default totp
--h                   Show help
+-g filename.key      File with the string to use. Content can be in hex or base32__
+-t <type>            Select the type of string contained in the file <filename.key>__
+                       type    => base32|hex__
+                       default => base32__
+-g filename.key -P   It requests a password to encrypt the content of the filename.key__
+-gk filename.key     Generate OTP, this mode don´t store any information__
+-gkf filename.key    Generate random passphrase in base32__
+-gkP                 Generate random password for encryption data__
+-k                   Generate OTP__
+-k -P                Request password for decryption__
+-s seconds           TOTP time-step duration (default=`30`)__
+-d digits            Number of digits in one-time-password__
+-q                   Show info stored in database__
+-a algorithm         Support values are sha1, sha256, sha512 (default sha1)__
+-S service           Name of the service where otp will be used, default totp__
+-h                   Show help__
 
 * Configuration file: ./totp.cfg, /etc/totp/totp.cfg
 
