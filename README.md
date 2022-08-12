@@ -5,6 +5,8 @@ Generates keys using TOTP algorithm.
 It has a small database (SQLite) where it stores the strings for time-based key generation.
 Allows setting a password for encryption of all keys or using the -P option to prompt the user for a password
 
+The project is the result of a task from the 42Málaga cybersecurity bootcamp
+
 ```
 -g filename.key      File with the string to use. Content can be in hex or base32
 -t <type>            Select the type of string contained in the file <filename.key>
